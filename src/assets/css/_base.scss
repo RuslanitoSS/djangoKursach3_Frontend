@@ -1,0 +1,41 @@
+@use './_variables.scss';
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-base);
+  transition: background-color var(--transition-slow), color var(--transition-slow);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+p {
+  margin-bottom: 1em;
+  color: var(--color-text);
+}
+
+a {
+  color: var(--color-accent);
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: lighten($color: #fca311, $amount: 10);
+
+}
+
+button {
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 1rem;
+  transition: background-color var(--transition-fast);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
