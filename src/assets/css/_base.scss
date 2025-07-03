@@ -23,7 +23,7 @@ a {
 }
 
 a:hover {
-  color: lighten($color: #fca311, $amount: 10);
+  color: lighten($color: #959392, $amount: 20);
 
 }
 
@@ -31,11 +31,42 @@ button {
   border-radius: var(--radius-sm);
   padding: 0.5rem 1rem;
   transition: background-color var(--transition-fast);
+  transition: color var(--transition-fast);
 }
 
-.container {
+.wrapper {
   width: 100%;
-  max-width: 1200px;
-  padding: 0 1rem;
-  margin: 0 auto;
+   padding: 1rem;
+   
+  margin-left: auto;
+  margin-right: auto;
+
+
+  // Мобильные устройства
+  max-width: 100%;
+
+  // Планшеты
+  @media (min-width: 640px) {
+    max-width: 640px;
+  }
+
+  // Небольшие ноутбуки
+  @media (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  // Стандартные десктопы
+  @media (min-width: 1024px) {
+    max-width: 1024px;
+  }
+
+  // Широкие экраны
+  @media (min-width: 1280px) {
+    max-width: 1200px;
+  }
+
+  // Очень широкие
+  @media (min-width: 1536px) {
+    max-width: 1400px;
+  }
 }

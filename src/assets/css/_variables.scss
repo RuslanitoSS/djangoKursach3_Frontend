@@ -1,9 +1,12 @@
+@use 'sass:color';
+
 :root {
-  --color-bg: #111;
+  --color-bg: #000;
   --color-surface: #1a1a1a;
-  --color-text: #f0f0f0;
-  --color-muted: #aaa;
-  --color-accent: #fca311;
+  --color-text: #fff;
+  --color-muted: #a7a5a4;
+  --color-muted-accent: #a7a5a4;
+  --color-accent: #a7a5a4;
 
   --font-base: 'Segoe UI', Roboto, sans-serif;
 

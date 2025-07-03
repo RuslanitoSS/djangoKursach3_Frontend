@@ -1,4 +1,3 @@
-import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import WatchPage from "./pages/WatchPage";
@@ -9,10 +8,12 @@ function App() {
   return (
     <>
       <Header />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/" element={<WatchPage />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<WatchPage />} />
+        </Routes>
+      </main>
       <Footer />
     </>
   );
