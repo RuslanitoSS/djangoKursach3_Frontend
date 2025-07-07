@@ -1,14 +1,10 @@
 .footer {
   color: var(--color-muted);
   font-size: 14px;
- 
-
+  padding-bottom: 1rem;
 
   a {
-
     text-decoration: none;
-
- 
   }
 
   .footer__top {
@@ -24,8 +20,6 @@
   .footer__socials {
     display: flex;
     gap: 1rem;
-
-
   }
 
   .footer__support {
@@ -34,12 +28,10 @@
     span {
       display: block;
       margin-bottom: 0.3rem;
-
     }
 
     .footer__link {
       font-weight: bold;
-
     }
   }
 
@@ -58,7 +50,6 @@
     .footer__info {
       max-width: 60ch;
       line-height: 1.6;
-
 
       p {
         color: var(--color-muted);

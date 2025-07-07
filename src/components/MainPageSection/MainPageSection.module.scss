@@ -1,0 +1,28 @@
+.sliderSection {
+  background-color: #000;
+  margin-block: 24px;
+  color: #fff;
+
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  width: 220px; // фиксированная ширина карточки
+  flex-shrink: 0;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+  }
+}

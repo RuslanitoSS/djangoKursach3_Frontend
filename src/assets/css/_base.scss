@@ -1,13 +1,20 @@
-@use './_variables.scss';
+@use "./_variables.scss";
 
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-base);
-  transition: background-color var(--transition-slow), color var(--transition-slow);
+  transition:
+    background-color var(--transition-slow),
+    color var(--transition-slow);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 600;
   line-height: 1.2;
 }
@@ -24,7 +31,6 @@ a {
 
 a:hover {
   color: lighten($color: #959392, $amount: 20);
-
 }
 
 button {
@@ -36,11 +42,10 @@ button {
 
 .wrapper {
   width: 100%;
-   padding: 1rem;
-   
+  padding: 0 1rem 0 1rem;
+
   margin-left: auto;
   margin-right: auto;
-
 
   // Мобильные устройства
   max-width: 100%;

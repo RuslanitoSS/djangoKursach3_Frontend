@@ -61,7 +61,7 @@ export default function Header() {
               {menuActive ? <FaTimes size="1em" /> : <FaBars size="1em" />}
             </button>
 
-            <NavLink to={"#"} className={styles.logo}>
+            <NavLink to={"/"} className={styles.logo}>
               Сома-Кино
             </NavLink>
           </div>
@@ -136,14 +136,14 @@ export default function Header() {
             <FaChild size="1em" />
             Детям
           </NavLink>
-          <button
+            {!searchActive && ( <button
             className={styles.searchButton}
             onClick={() => setSearchActive(true)}
             aria-label="Поиск"
           >
             <FaSearch size="1em" />
             <span>Поиск</span>
-          </button>
+          </button>)}
         </nav>
 
         {menuActive && searchActive && (
