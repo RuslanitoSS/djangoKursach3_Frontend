@@ -1,7 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+// @ts-ignore
 import "swiper/scss";
-import "swiper/scss/free-mode";
-import "swiper/scss/pagination";
+// @ts-ignore
+import "swiper/css/free-mode";
+// @ts-ignore
+import "swiper/css/pagination";
 
 import styles from "./MainPageSection.module.scss";
 import { FreeMode } from "swiper/modules";
